@@ -1,0 +1,24 @@
+{
+  "extends": "standard",
+  "plugins": [
+    "standard",
+    "promise"
+  ],
+  "rules": {
+    "max-len": [
+      "error",
+      {
+        "code": 125,
+        "ignoreTemplateLiterals": true,
+        "ignoreUrls": true
+      }
+    ],
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "all"
+      }
+    ],
+    "camelcase": "warn"
+  }
+}
