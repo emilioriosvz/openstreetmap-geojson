@@ -22,7 +22,8 @@ const getGeoJSON = async relationId => {
 }
 
 /**
- * Makes a resquest to the API with osm relation id and returns the Promise that resolves the GeoJSON.
+ * Waits for the indicated time and then makes a resquest to the API with osm relation id and returns
+ * the Promise that resolves the GeoJSON.
  * @param  {number} relationId  - The Relation id.
  * @param  {number} timeBetweenCallsInMS - The milliseconds of waiting between calls.
  * @return {Promise<object>} - GeoJSON.
