@@ -24,7 +24,7 @@ const osm = require('openstreetmap-geojson')
 
 const ids = [340783, 342563, 3657693, 344522, 347950]
 
-const geojsons = await Promise.all(ids.map(id => osm.getGeoJSONPolitely(id, 200))
+const geojsons = await Promise.all(ids.map(id => osm.getGeoJSONPolitely(id, 200)))
 ```
 
 ## API
