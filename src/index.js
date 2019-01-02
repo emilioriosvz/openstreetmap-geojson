@@ -12,8 +12,8 @@ const getGeoJSON = async relationId => {
   try {
     const res = await fetch(`${API_URL}${relationId}`)
     const text = await res.text()
-    if (!res || res.status !== 200 || text === 'None\n') throw new Error('Unable to fetch the GeoJSON')
-
+    if (!res || res.status !== 200) throw new Error('Unable to fetch the GeoJSON')
+    if (text === 'None\n') return {}
     const json = JSON.parse(text)
     return json
   } catch (error) {
