@@ -1,6 +1,6 @@
 {
   "name": "openstreetmap-geojson",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Get GeoJSON from OpenStreetMaps",
   "main": "src/index.js",
   "scripts": {
